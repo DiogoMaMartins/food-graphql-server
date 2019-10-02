@@ -2,20 +2,43 @@
   "name": "food-graphql-server",
   "version": "1.0.0",
   "description": "The GraphQL server to reserve food.",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "start": "nodemon src/index.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "apollo-server": "^2.3.1",
-    "graphql": "^14.1.1",
-    "uuid": "^3.3.2",
-    "yup": "^0.26.10"
-  },
-  "devDependencies": {
-    "nodemon": "^1.18.9"
-  }
+  "start": "ts-node-dev --respawn src/index.ts"
+},
+"keywords": [],
+"author": "Diogo Martins ",
+"license": "ISC",
+"dependencies": {
+  "apollo-server-express": "^2.4.2",
+  "bcryptjs": "^2.4.3",
+  "class-validator": "^0.10.1",
+  "connect-redis": "^4.0.3",
+  "cors": "^2.8.5",
+  "express": "^4.17.1",
+  "express-session": "^1.16.2",
+  "ioredis": "^4.14.1",
+  "nodemailer": "^6.3.0",
+  "pg": "^7.12.1",
+  "reflect-metadata": "^0.1.13",
+  "type-graphql": "^0.17.5",
+  "typeorm": "^0.2.19",
+  "uuid": "^3.3.3"
+},
+"devDependencies": {
+  "@types/bcryptjs": "^2.4.2",
+    "@types/connect-redis": "^0.0.11",
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.1",
+    "@types/express-session": "^1.15.14",
+    "@types/graphql": "^14.5.0",
+    "@types/ioredis": "^4.0.18",
+    "@types/node": "^12.7.8",
+    "@types/nodemailer": "^6.2.1",
+    "@types/uuid": "^3.4.5",
+    "nodemon": "^1.19.3",
+    "ts-node": "^8.4.1",
+    "ts-node-dev": "^1.0.0-pre.43",
+    "typescript": "^3.6.3"
+}
 }
