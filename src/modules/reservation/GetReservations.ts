@@ -25,14 +25,6 @@ import { getRepository } from "typeorm";
         .where("reservation.id = :id", {id:id})
         .getOne();
 
-
-        const Product = await connection
-          .getRepository(Product)
-          .createQueryBuilder("product")
-          .leftJoinAndSelect("product.store", "store")
-          .getMany();
-
-        console.log("reservation",reservation)
       return await reservation
     }
   }

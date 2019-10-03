@@ -30,12 +30,11 @@ export class Store extends BaseEntity  {
     @Column()
     city: string;
 
+    @Field(type => Product)
     @OneToMany(type => Product, product => product.store,{
     cascade: true,
   })
-    products: Product[];
+    products: [Product];
 
-   //@OneToMany(() => Product,product => product.store)
-   //product:Product;
 
 }

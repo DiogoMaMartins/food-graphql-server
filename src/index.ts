@@ -15,6 +15,12 @@ import { GetStoresResolver } from "./modules/store/GetStores";
 import { RegisterProductResolver } from "./modules/products/Register";
 import { GetProductsResolver }  from "./modules/products/GetProducts";
 
+//------------------From Reservation-------------------------------
+import { ReservationProductResolver } from './modules/reservation/Reservation';
+import { GetReservationsResolver } from './modules/reservation/GetReservations';
+
+//------------------From User-------------------------------
+// ---- if i a have time
 //import { RegisterUserResolver } from "./modules/user/Register";
 
 
@@ -26,7 +32,10 @@ const main = async () => {
       RegisterStoreResolver,
       GetStoresResolver,
       RegisterProductResolver,
-      GetProductsResolver
+      GetProductsResolver,
+      ReservationProductResolver,
+      GetReservationsResolver
+
 
     ]
   });

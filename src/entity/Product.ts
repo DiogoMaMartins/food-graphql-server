@@ -21,6 +21,7 @@ export class Product extends BaseEntity {
   @Column()
   description: string;
 
+  @Field(type => Store)
   @ManyToOne(type => Store, store => store.products)
   store: Store;
   //@ManyToOne(() => Store,store => store.product)
